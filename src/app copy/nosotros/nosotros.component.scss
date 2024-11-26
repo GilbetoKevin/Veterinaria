@@ -1,0 +1,445 @@
+.principle {
+    display: flex;
+
+    &__text {
+        width: 40%;
+        justify-items: center;
+        padding-top: 40px;
+
+        h2 {
+            font-family: "Poppins", sans-serif;
+            font-size: 50px;
+            color: #004aad;
+        }
+
+        h3 {
+            font-family: "Poppins", sans-serif;
+            font-size: 25px;
+            color: #ff914d;
+            text-align: center;
+        }
+
+        p {
+            font-family: "Open Sans", sans-serif;
+            padding-left: 8%;
+            padding-right: 8%;
+            text-align: center;
+        }
+    }
+
+    &__image {
+        width: 60%;
+        height: 300px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: right;
+        }
+    }
+}
+
+.details {
+    background-color: #daeaef;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: "Poppins", sans-serif;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        width: 300px;
+
+        img {
+            width: 125px;
+        }
+    }
+}
+
+
+
+.history {
+    display: flex;
+
+    img {
+        width: 50%;
+        object-fit: cover;
+        object-position: left;
+        max-height: 400px;
+
+    }
+
+    &__container {
+        width: 50%;
+        background-color: #e2e2e2;
+        padding: 5%;
+
+        h2 {
+            font-family: "Poppins", sans-serif;
+            color: #ff914d;
+        }
+
+        p {
+            font-family: "Open Sans", sans-serif;
+        }
+    }
+}
+
+.miviva {
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+    
+
+    &__item {
+
+        width: 100%;
+
+        h2 {
+            font-family: "Poppins", sans-serif;
+            color: #ff914d;
+            font-size: 30px;
+        }
+
+        &__line {
+            width: 25%;
+            height: 3px;
+            background-color: black;
+        }
+
+        p {
+            font-family: "Open Sans", sans-serif;
+            font-size: 20px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+    }
+}
+
+.values {
+    padding: 50px;
+    padding-top: 20px;
+
+    h2 {
+        font-family: "Poppins", sans-serif;
+        color: #ff914d;
+        font-size: 30px;
+    }
+
+    &__line {
+        width: 100px;
+        height: 3px;
+        background-color: black;
+    }
+
+    &__set {
+        flex-wrap: wrap;
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+
+        img {
+            width: 300px;
+        }
+
+        &__box {
+            padding-top: 30px;
+            text-align: center;
+            justify-content: center;
+            gap: 20px;
+
+            p {
+                text-align: center;
+                padding-top: 10px;
+                font-family: "Open Sans", sans-serif;
+                font-size: 20px;
+            }
+
+            &__item {
+                background-color: #f9f9f9;
+                border-radius: 50%;
+                width: 150px;
+                height: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+                i {
+                    font-size: 4rem;
+                    color: #5ce1e6;
+                    transition: color 0.3s ease, transform 0.3s ease;
+                }
+
+                &:hover {
+                    background-color: #5ce1e6;
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+                    i {
+                        color: #ffffff;
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+.image {
+    img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.equipment {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+
+    &__title {
+        margin-bottom: 40px;
+
+        p {
+            font-size: 18px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+    }
+
+
+    &__item {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        max-width: 200px;
+        margin: 20px;
+        transition: transform 0.3s ease;
+        display: inline-block;
+
+
+        &:hover {
+            transform: translateY(-10px);
+            background-color: #f9f9f9;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+            margin: 15px 0 10px;
+        }
+
+        &__line {
+            width: 100%;
+            height: 3px;
+            background-color: #007bff;
+            margin: 10px auto;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: #007bff;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            i {
+                font-size: 2rem;
+                color: #ffffff;
+                transition: color 0.3s ease, transform 0.3s ease;
+            }
+
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+    }
+}
+
+.foot {
+    background-color: #5ce1e6;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.patent {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .principle {
+        &__text {
+            padding-top: 20px;
+
+            h2 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 20px !important;
+            }
+        }
+
+        &__image {
+            width: 60%;
+            height: 200px;
+        }
+    }
+
+    .details {
+        &__item {
+            width: 200px;
+
+            img {
+                width: 100px;
+            }
+        }
+    }
+
+    .miviva {
+        &__item {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .values {
+        &__set {
+            &__box {
+                &__item {
+                    width: 100px;
+                    height: 100px;
+                    i {
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+    .equipment {
+        &__item {
+            max-width: 150px;  
+        }
+    }
+    
+    .foot {
+        h2 {
+            font-size: 20px;
+        }
+    }
+    .patent {
+        font-size: 20px !important;
+    }
+}
+@media (max-width: 480px) {
+    .principle {
+        &__text {
+            width: 50%;
+            padding-top: 30px;
+
+            h2 {
+                font-size: 22px;
+            }
+           
+        }
+
+        &__image {
+            width: 50%;
+            height: 200px;
+        }
+    }
+    .miviva {
+        display: block;
+        &__item {
+            padding-top: 20px;
+        }
+    }
+    .values {
+        &__set {
+            display: inline-block;
+            justify-items: center;
+            width: 100%;
+            img {
+                padding-top: 20px;
+                width: 200px;
+            }
+            &__box {
+                p{
+                    width: 100px;;
+                }
+            }
+        }
+    }
+    .equipment {
+        &__item {
+            max-width: 100px;  
+            button {
+                i {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .foot {
+        h2 {
+            font-size: 14px;
+        }
+    }
+
+    .patent {
+        p {
+            font-size: 14px;
+        }
+    }
+}

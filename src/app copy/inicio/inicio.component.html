@@ -1,0 +1,99 @@
+<div class="welcome">
+    <div class="welcome__container">
+        <h2>La Clínica Veterinaria Animal Health más completa de Cuidad Mante</h2>
+        <h3>Los expertos en el cuidado especializado de tu mascota</h3>
+        <button>Agenda tu cita</button>
+    </div>
+</div>
+<div class="services">
+    <div class="services__text">
+        <h3>El más alto estándar
+            en el cuidado de
+            tu mascota</h3>
+        <p>Conoce porque somos unicos</p>
+    </div>
+    <div class="services__items">
+        <div class="services__items__box">
+            <img src="images/services/botiquin.png" alt="">
+            <p>El mejor equipo</p>
+        </div>
+        <div class="services__items__box">
+            <img src="images/services/trofeo.png" alt="">
+            <p>Múltiples especialidades</p>
+        </div>
+        <div class="services__items__box">
+            <img src="images/services/doctor.png" alt="">
+            <p>Doctores Calificados</p>
+        </div>
+        <div class="services__items__box">
+            <img src="images/services/ambulancia.png" alt="">
+            <p>Emergencias 24 horas </p>
+        </div>
+    </div>
+    <div class="services__text">
+        <p>Confíanos la vida de tu mascota</p>
+    </div>
+</div>
+<div class="specialties">
+    <div class="specialties__info">
+        <h2 class="specialties__info    ">Nuestros Servicios Especializados</h2>
+
+        <div class="" *ngIf="slides.length > 0">
+            <!-- Solo se muestra el slide actual -->
+            <div *ngFor="let slide of slides; let i = index" [hidden]="i !== currentIndex">
+                <div class="specialties__carousel">
+                    <div class="specialties__carousel__info">
+                        <h3>{{ slide.title }}</h3>
+                        <div class="specialties__carousel__info__line"></div>
+                        <p>{{ slide.description }}</p>
+
+                    </div>
+                    <div class="specialties__carousel__image">
+                        <img [src]="slide.image" alt="{{ slide.title }}">
+
+                    </div>
+                </div>
+                <div class="specialties__button"> <!-- Botones para navegar entre slides -->
+                    <button (click)="previousSlide()">Prev</button>
+                    <button (click)="nextSlide()">Next</button>
+
+                    <!-- Indicador del número de slide actual -->
+                    <p>{{ currentIndex + 1 }}/{{ slides.length }}</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="appointment">
+        <h2>Llegamos al fondo del problema de tu mascota</h2>
+        <div class="appointment__container">
+            <img class="appointment__container__logo" src="images/logo veterinaria.png" alt="">
+            <img class="appointment__container__photo" src="images/gato.jpg" alt="">
+            <button class="appointment__container__button">Agenda tu cita</button>
+        </div>
+
+        <p>Confíanos la vida de tu mascota</p>
+
+
+    </div>
+    <div class="veterinarians">
+        <div class="veterinarians__boxs">
+            <img src="images/veterinaria.jpg" alt="">
+            <div class="veterinarians__boxs__info">
+                <h3>MVZ. Carlos A. Martínez Garza</h3>
+                <div class="veterinarians__boxs__info__line"></div>
+                <p>Responsable del área de Cirugía Especializada
+                    Egresado de la F.M.V.Z. de la U.A.N.L. </p>
+                <p>Diplomado a Distancia en Medicina y Cirugía en Perros y Gatos por la U.N.A.M. </p>
+                <p>Presidente de la A.C.V.A.M.M. en el bienio 2001-2003.</p>
+                <p>Cédula Profesional: 1401933</p>
+            </div>
+        </div>
+        <button>Conoce a todo el equipo</button>
+        <img class="veterinarians__heartbeat" src="images/heartbeat.png" alt="">
+    </div>
+    <div class="patent">
+        <p>© 2024 Hospital Veterinario AH. </p>
+    </div>
+    

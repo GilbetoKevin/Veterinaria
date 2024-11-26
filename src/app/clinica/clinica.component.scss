@@ -1,0 +1,177 @@
+.principle {
+    display: flex;
+
+    &__text {
+        width: 40%;
+        justify-items: center;
+        padding-top: 40px;
+        text-align: center;
+
+        h2 {
+            font-family: "Poppins", sans-serif;
+            font-size: 50px;
+            color: #004aad;
+        }
+
+        h3 {
+            font-family: "Poppins", sans-serif;
+            font-size: 25px;
+            color: #ff914d;
+            text-align: center;
+        }
+
+        p {
+            font-family: "Open Sans", sans-serif;
+            padding-left: 8%;
+            padding-right: 8%;
+            text-align: center;
+        }
+    }
+
+    &__image {
+        width: 60%;
+        height: 300px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: right;
+        }
+    }
+}
+
+.connections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__item {
+        display: flex;
+        padding: 50px;
+        align-items: center;
+        font-family: "Open Sans", sans-serif;
+        gap: 10px;
+        width: 200px;
+
+        img {
+            width: 75px;
+        }
+    }
+}
+
+.foot {
+    background-color: #5ce1e6;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.patent {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .principle {
+        &__text {
+            padding-top: 20px;
+
+            h2 {
+                font-size: 30px;
+            }
+           
+        }
+
+        &__image {
+            width: 60%;
+            height: 200px;
+        }
+    }
+
+    .connections {
+        &__item {
+            padding: 30px;
+            width: 150px;
+
+            img {
+                width: 50px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .foot {
+        h2 {
+            font-size: 20px;
+        }
+    }
+
+    .patent {
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .principle {
+        &__text {
+            width: 50%;
+            padding-top: 30px;
+
+            h2 {
+                font-size: 22px;
+            }
+           
+        }
+
+        &__image {
+            width: 50%;
+            height: 200px;
+        }
+    }
+
+    .connections {
+        gap: 15px;
+        &__item {
+           
+            padding: 15px;
+            width: 150px;
+            
+
+            img {
+                width: 50px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .foot {
+        h2 {
+            font-size: 14px;
+        }
+    }
+
+    .patent {
+        p {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+<div class="contact">
+  <div class="contact__items">
+    <img src="images/enviar.png" alt="correo" />
+    <p>gikevara&commat;gmail.com</p>
+  </div>
+  <div class="contact__items">
+    <img src="images/telefono.png" alt="">
+    <p>831-158-8671</p>
+  </div>
+  <div class="contact__items">
+    <img src="images/ubicacion.png" alt="">
+    <p>Fracc. Santa Monica 409</p>
+  </div>
+  <div class="contact__items">
+    <img src="images/facebook.png" alt="">
+    <p>Veterinary Animal Health
+    </p>
+  </div>
+</div>
+<nav class="navigation">
+  <div class="navigation__left">
+    <img src="images/logo veterinaria.png" alt="">
+  </div>
+  <div class="navigation__center">
+    <ul class="navigation__center__menu">
+      <li (click)="navigateTo('inicio')">Inicio</li>
+      <li (click)="navigateTo('nosotros')">Nosotros</li>
+      <li (click)="navigateTo('clinicas')">Clínicas</li>
+    </ul>
+  </div>
+
+    <div class="navigation__right">
+      <button>Agenda tu cita</button>
+    </div>
+  </nav>
+  <div *ngIf="currentPage === 'inicio'">
+    <app-inicio></app-inicio>
+  </div>
+  <div *ngIf="currentPage === 'nosotros'">
+    <app-nosotros></app-nosotros>
+  </div>
+  <div *ngIf="currentPage === 'clinicas'">
+    <app-clinica></app-clinica>
+  </div>
+ 
+  
